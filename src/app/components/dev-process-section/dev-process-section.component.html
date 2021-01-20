@@ -1,16 +1,22 @@
-<div class="w-screen h-screen bg-gray-900 flex flex-col p-3 md:p-16">
+<div class="w-full h-full md:w-screen md:h-screen bg-gray-900 flex flex-col p-3 space-y-10 md:p-16">
 
     <div class="w-full flex flex-col space-y-1 justify-center items-start">
         <app-sub-heading subHeadingText="How do I work"></app-sub-heading>
         <app-heading bgColor="DEFAULT_GRADIENT" headingText="Development Process"></app-heading>
     </div>
 
-    <div class="w-full flex flex-col justify-around items-center">
+    <div class="w-full h-full space-y-5 flex flex-col justify-center items-center">
 
         <!-- FIRST_ROW -->
-        <div class="flex w-full justify-between items-center">
-            <app-dev-process-section class="w-full"></app-dev-process-section>
-            <app-dev-process-section class="w-full"></app-dev-process-section>
+        <div class="flex flex-col md:flex-row w-full justify-between items-start">
+            <app-process-info type="RESEARCH" class="w-full md:w-1/2"></app-process-info>
+            <app-process-info type="DESIGN" class="w-full md:w-1/2"></app-process-info>
+        </div>
+
+        <!-- SECOND -->
+        <div class="flex flex-col md:flex-row w-full justify-between items-start">
+            <app-process-info type="DEV" class="w-full md:w-1/2"></app-process-info>
+            <app-process-info type="QA" class="w-full md:w-1/2"></app-process-info>
         </div>
     </div>
 </div>

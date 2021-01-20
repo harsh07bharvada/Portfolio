@@ -1,17 +1,18 @@
-<div class="w-full h-full flex ">
+<div class="w-full h-full flex space-x-2 py-2">
 
-    <div class="p-3 bg-gray-800 rounded-md">
-        <app-icon iconType="BEAKER" iconSize="MD"></app-icon>
+    <div class="h-14 w-14 flex justify-center items-center p-4 bg-gray-800 text-indigo-600 rounded-md">
+        <app-icon [iconType]="dataState.iconType" iconSize="LG"></app-icon>
     </div>
 
-    <div class="flex flex-col justify-between items-center">
-        <div class=" text-gray-600 font-bold text-lg">
-            Research & Stategy
-        </div>
+    <div class="w-full flex flex-col justify-between items-center">
+        <span class=" w-full text-gray-600 font-bold text-xl md:text-3xl text-left">
+            {{dataState.headingText}}
+        </span>
 
-        <div class=" text-gray-400 font-medium text-md">
-            Ask First. Before jumping into developing I always make sure what needs to be done and what I have to learn to hit the ground running. Then comes the process of breaking down work into atomic tasks and making sure the order and estimates of the tasks are perfect.
-        </div>
+        <span class="w-full text-gray-400 font-medium text-sm md:text-xl py-3 pr-10 text-left leading-relaxed">
+            <span class="text-gray-500">{{dataState.subHeadingText}}</span>
+            {{dataState.descriptionText}}
+        </span>
     </div>
     
 </div>
