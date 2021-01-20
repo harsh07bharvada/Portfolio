@@ -3,12 +3,14 @@
   class="flex space-x-2 p-3 justify-center items-center rounded-md cursor-pointer shadow-md focus:outline-none focus:ring-2  focus:ring-opacity-50"
   [ngClass]="styleState">
 
+  <!-- BUTTON LABEL WRAPPER -->
+  <span *ngIf="!isIconOnly">{{btnLabel}}</span>
+
   <!-- BUTTON ICON WRAPPER -->
   <div *ngIf="isIconOnly || isIconActive" class="flex justify-center items-center">
     <app-icon [iconType]="iconType" [iconSize]="iconSize"></app-icon>
   </div>
 
-  <!-- BUTTON LABEL WRAPPER -->
-  <span *ngIf="!isIconOnly">{{btnLabel}}</span>
+  
 
 </button>

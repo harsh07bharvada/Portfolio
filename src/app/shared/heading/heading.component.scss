@@ -1,0 +1,26 @@
+@mixin add-text-gradient($fallback-color, $gradient-value) {
+    // adding falback color
+    color: $fallback-color;
+  
+    // if properties doesn't support - ignore them
+    @supports (background-clip: text) and (-webkit-text-fill-color: transparent) {
+      //add background gradient
+      background-image: $gradient-value;
+  
+      // crop to text borders
+      background-clip: text;
+  
+      // add transparency for text, we can see background gradient
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+
+.bg__gradient__default {
+
+  @include add-text-gradient($fallback-color: #F472B6,
+    $gradient-value: linear-gradient(90deg, #F472B6 0%, #FB7185 78.84%));
+
+}
+
+

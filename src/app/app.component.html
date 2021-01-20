@@ -1,11 +1,5 @@
-<app-custom-button class="w-100" (onBtnClicked)="refreshClicked($event)" [isIconOnly]="true" iconType="REFRESH"
-  iconSize="MD">
-</app-custom-button>
+<div class="w-full h-full bg-gray-900 flex flex-col">
 
-<app-custom-button class="w-100" (onBtnClicked)="loveClicked($event)" bgColor="RED600" [isIconOnly]="true"
-  iconType="LOVE" iconSize="MD">
-</app-custom-button>
-
-<app-custom-button class="w-100" (onBtnClicked)="completeMealClicked($event)" bgColor="RED600" btnLabel="Complete Meal"
-  [isIconActive]="true" iconType="CHECK" iconSize="MD">
-</app-custom-button>
+  <app-home-landing-section></app-home-landing-section>
+  <app-dev-process-section></app-dev-process-section>
+</div>
