@@ -1,3 +1,4 @@
+const tailwindConfig = require("./tailwind.config.js")
 module.exports = {
   module: {
     rules: [
@@ -10,7 +11,7 @@ module.exports = {
             syntax: 'postcss-scss',
             plugins: [
               require('postcss-import'),
-              require('tailwindcss'),
+              require('tailwindcss')(tailwindConfig),
               require('autoprefixer'),
             ],
           },

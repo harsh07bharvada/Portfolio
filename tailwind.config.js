@@ -1,9 +1,9 @@
 const colors = require('tailwindcss/colors')
 
-module.exports = (isProd) => ({
+module.exports = {
   prefix: '',
   purge: {
-    enabled: isProd,
+    enabled: true,
     content: [
       '**/*.html',
       '**/*.ts',
@@ -36,4 +36,4 @@ module.exports = (isProd) => ({
     require('@tailwindcss/typography'),
     require('@tailwindcss/aspect-ratio'),
   ],
-});
+};
