@@ -29,5 +29,4 @@ export class RecommendationSectionComponent implements OnInit {
   trackByFeedbackBy(index: number, testimonial: any) {
     return testimonial.feedbackBy;
   }
-
 }
