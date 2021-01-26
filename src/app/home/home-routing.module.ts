@@ -4,7 +4,7 @@ import { HomeSectionComponent } from './home-section/home-section.component';
 
 const routes: Routes = [
   {
-    path: 'home',
+    path: '',
     component: HomeSectionComponent
   }
 ];
