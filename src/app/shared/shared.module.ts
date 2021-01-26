@@ -8,7 +8,7 @@ import { SubHeadingComponent } from './sub-heading/sub-heading.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { ProcessInfoComponent } from './process-info/process-info.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
-
+import { RouterModule } from '@angular/router';
 
 
 @NgModule({
@@ -26,6 +26,7 @@ import { TestimonialCardComponent } from './testimonial-card/testimonial-card.co
     CommonModule,
     ReactiveFormsModule,
     FormsModule,
+    RouterModule
   ],
   exports: [
     TestimonialCardComponent,
