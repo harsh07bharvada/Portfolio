@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import { AboutModule } from './about/about.module';
 import { HomeModule } from './home/home.module';
 import { PagesRoutingModule } from './pages-routing.module';
-
+import { ProjectsModule } from './projects/projects.module';
 
 @NgModule({
   declarations: [],
@@ -11,7 +11,8 @@ import { PagesRoutingModule } from './pages-routing.module';
     CommonModule,
     PagesRoutingModule,
     HomeModule,
-    AboutModule
+    AboutModule,
+    ProjectsModule
   ]
 })
 export class PagesModule { }
