@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { ProcessInfoComponent } from './process-info/process-info.component';
 import { TestimonialCardComponent } from './testimonial-card/testimonial-card.component';
 import { RouterModule } from '@angular/router';
+import { ChipsComponent } from './chips/chips.component';
 
 
 @NgModule({
@@ -20,6 +21,7 @@ import { RouterModule } from '@angular/router';
     NavbarComponent,
     ProcessInfoComponent,
     TestimonialCardComponent,
+    ChipsComponent,
     
   ],
   imports: [
@@ -35,7 +37,8 @@ import { RouterModule } from '@angular/router';
     SubHeadingComponent,
     HeadingComponent,
     CustomButtonComponent,
-    IconComponent
+    IconComponent,
+    ChipsComponent
   ]
 })
 export class SharedModule { }

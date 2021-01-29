@@ -1,4 +1,5 @@
-<div class="w-full bg-gray-800  shadow-2xl rounded-lg p-5 md:p-10 flex flex-col md:flex-row justify-between items-center">
+<div
+  class="w-full bg-gray-800  shadow-2xl rounded-lg p-5 md:p-10 flex flex-col md:flex-row justify-between items-center">
 
 
   <!-- PROJECT IMAGE   -->
@@ -14,6 +15,11 @@
       {{project.projectName}}
     </span>
 
+    <div class="flex w-full justify-end items-center">
+      <app-chips [name]="project.isOpenSource ? 'Open-Source' : 'Side-Project'"
+        [type]="project.isOpenSource ? 'PINK300' : 'GREEN300'"></app-chips>
+    </div>
+
     <!-- PROJECT DESCRIPTION  -->
     <span class="flex w-fulljustify-end items-center text-gray-500 text-2xl text-right">
       {{project.projectDescription}}
@@ -23,8 +29,8 @@
     <div class="flex  w-full justify-end space-x-3 items-center">
 
       <!-- PROJECT LIVE LINK -->
-      <app-custom-button *ngIf="project.isProjectLinkPresent" (onBtnClicked)="viewProject($event)" size="MD" bgColor="INDIGO600"
-        btnLabel="View" [isIconActive]="true" iconType="VIEW" iconSize="LG">
+      <app-custom-button *ngIf="project.isProjectLinkPresent" (onBtnClicked)="viewProject($event)" size="MD"
+        bgColor="INDIGO600" btnLabel="View" [isIconActive]="true" iconType="VIEW" iconSize="LG">
       </app-custom-button>
 
       <!-- PROJECT GITHUB LINK -->
