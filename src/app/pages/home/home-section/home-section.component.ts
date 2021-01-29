@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-home-section',
@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeSectionComponent implements OnInit {
 
+  
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  goToDevProcess(){
+    document.getElementById("devProcess").scrollIntoView({behavior:'smooth'});
   }
 
 }

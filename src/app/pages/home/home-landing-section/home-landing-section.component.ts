@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
 
 @Component({
   selector: 'app-home-landing-section',
@@ -7,13 +7,16 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeLandingSectionComponent implements OnInit {
 
+
+  @Output() scrollToDevProcess = new EventEmitter<any>();
+
   constructor() { }
 
   ngOnInit(): void {
   }
 
-  completeMealClicked(event: any): void {
-    console.log("completeMeal clicked")
+  goToDevProcess(event: any): void {
+    this.scrollToDevProcess.emit();
   }
 
 }
