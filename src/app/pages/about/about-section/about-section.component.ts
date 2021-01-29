@@ -12,8 +12,8 @@ export class AboutSectionComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  completeMealClicked(event){
-
+  openResume(event){
+    window.open("assets/files/Harsh_Bharvada.pdf","_blank");
   }
 
 }
