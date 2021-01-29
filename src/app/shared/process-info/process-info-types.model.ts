@@ -1,7 +1,7 @@
 export const ProcessInfoTypeConfig = {
     RESEARCH: {
         iconType: 'BEAKER',
-        headingText: 'Research & Stategy',
+        headingText: 'Research & Strategy',
         subHeadingText:'Ask First.',
         descriptionText: ' Before jumping into developing I always make sure what needs to be done and what I have to learn to hit the ground running. Then comes the process of breaking down work into atomic tasks and making sure the order and estimates of the tasks are perfect.'
     },

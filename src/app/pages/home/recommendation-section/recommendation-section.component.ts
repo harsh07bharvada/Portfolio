@@ -13,7 +13,7 @@ export class RecommendationSectionComponent implements OnInit {
       feedbackBy: 'Shirsha Bhattacharyya'
     },
     {
-      feedback: '"I rarely come across a self-motivated talent who stand out like Harsh. Harsh is proactive, result oriented, responsible and technically sound person and he is always ready to put all his energy and time to get the job done. Harsh’s ability to troubleshoot and analyse a technical problem was unlike any I’ve seen before."',
+      feedback: '"I rarely come across a self-motivated talent who stand out like Harsh. Harsh is proactive, result oriented, responsible and technically sound person. Harsh’s ability to troubleshoot and analyse a technical problem was unlike any I’ve seen before."',
       feedbackBy: 'Neha Verma'
     },
     {
