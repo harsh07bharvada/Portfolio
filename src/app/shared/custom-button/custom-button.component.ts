@@ -17,6 +17,7 @@ export class CustomButtonComponent {
   @Input() isIconActive: boolean = false;
   @Input() iconType: string = 'default';
   @Input() iconSize: IconSize = IconSize.MD;
+  @Input() iconAnimation : string = '';
   @Input() size: FontSize = FontSize.BASE;
   @Input() bgColor: CustomButtonColors = CustomButtonColors.DEFAULT;
 

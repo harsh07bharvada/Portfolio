@@ -5,18 +5,18 @@
         <app-heading bgColor="DEFAULT_GRADIENT" headingText="Development Process"></app-heading>
     </div>
 
-    <div class="w-full h-full space-y-5 flex flex-col justify-center items-center">
+    <div @staggerFade class="w-full h-full space-y-5 flex flex-col justify-center items-center">
 
         <!-- FIRST_ROW -->
         <div class="flex flex-col md:flex-row w-full justify-between items-start">
-            <app-process-info type="RESEARCH" class="w-full md:w-1/2"></app-process-info>
-            <app-process-info type="DESIGN" class="w-full md:w-1/2"></app-process-info>
+            <app-process-info type="RESEARCH" class="eachStaggerComponent w-full md:w-1/2"></app-process-info>
+            <app-process-info type="DESIGN" class=" eachStaggerComponent w-full md:w-1/2"></app-process-info>
         </div>
 
         <!-- SECOND -->
         <div class="flex flex-col md:flex-row w-full justify-between items-start">
-            <app-process-info type="DEV" class="w-full md:w-1/2"></app-process-info>
-            <app-process-info type="QA" class="w-full md:w-1/2"></app-process-info>
+            <app-process-info  type="DEV" class=" eachStaggerComponent w-full md:w-1/2"></app-process-info>
+            <app-process-info  type="QA" class=" eachStaggerComponent w-full md:w-1/2"></app-process-info>
         </div>
     </div>
 </div>

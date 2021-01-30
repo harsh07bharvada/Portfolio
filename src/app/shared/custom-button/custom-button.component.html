@@ -7,7 +7,7 @@
   <span *ngIf="!isIconOnly">{{btnLabel}}</span>
 
   <!-- BUTTON ICON WRAPPER -->
-  <div *ngIf="isIconOnly || isIconActive" class="flex justify-center items-center">
+  <div *ngIf="isIconOnly || isIconActive" class="flex justify-center items-center " [ngClass]="iconAnimation">
     <app-icon [iconType]="iconType" [iconSize]="iconSize"></app-icon>
   </div>
 
