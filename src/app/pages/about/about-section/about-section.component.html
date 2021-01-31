@@ -6,13 +6,13 @@
       class="w-full md:w-1/2 h-full px-5 md:px-16 space-y-2 md:space-y-10 flex flex-col justify-center  items-center ">
 
       <div class="flex flex-col justify-center items-center md:items-start w-full">
-        <app-sub-heading subHeadingText="Who am I"></app-sub-heading>
-        <app-heading bgColor="DEFAULT_GRADIENT" headingText="About Me"></app-heading>
+        <app-sub-heading @slideInFromRightAndFade  subHeadingText="Who am I"></app-sub-heading>
+        <app-heading @slideInFromRightAndFade  bgColor="DEFAULT_GRADIENT" headingText="About Me"></app-heading>
       </div>
 
       <div
         class="flex w-full text-gray-400 md:pr-20 font-base text-lg md:text-xl justify-center md:justify-start items-center">
-        <span class="text-center md:text-left">Hey, I'm Harsh Bharvada. I am Web Developer working as a Software
+        <span @slideInFromRightAndFade  class="text-center md:text-left">Hey, I'm Harsh Bharvada. I am Web Developer working as a Software
           Development Engineer at Reliance Jio having total of more than 2.5 years of experience under my belt. I am
           based out of Kolkata, India 🇮🇳
           <br>
@@ -21,7 +21,7 @@
       </div>
 
       <div class="flex w-full justify-center md:justify-start  items-center">
-        <app-custom-button (onBtnClicked)="openResume($event)" size="LG" bgColor="INDIGO600" btnLabel="Download Resume"
+        <app-custom-button @slideInFromRightAndFade  (onBtnClicked)="openResume($event)" size="LG" bgColor="INDIGO600" btnLabel="Download Resume"
           [isIconActive]="true" iconType="DOWNLOAD" iconSize="MD" >
         </app-custom-button>
       </div>
@@ -29,6 +29,6 @@
 
     <!-- RIGHT_SECTION -->
     <div class="hidden md:w-1/2 md:h-full justify-end md:flex">
-      <img hidden class="hover:scale-105 " src="../../../assets/images/about.svg" alt="">
+      <img @fade hidden class="hover:scale-105 " src="../../../assets/images/about.svg" alt="">
     </div>
   </div>

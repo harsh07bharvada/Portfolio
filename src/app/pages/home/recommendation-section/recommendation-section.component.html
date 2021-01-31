@@ -5,8 +5,8 @@
       <app-heading bgColor="DEFAULT_GRADIENT" headingText="Recommendations"></app-heading>
     </div>
   
-    <div class="w-full px-3 h-full space-y-5 md:space-y-0 md:space-x-10 flex flex-col md:flex-row justify-center items-center">
-      <app-testimonial-card class="flex-1 h-full" *ngFor="let testimonial of testimonialDataList; trackBy:trackByFeedbackBy"
+    <div #recommSec  [@staggerFade]="inView ? 'open' : 'close'" class="w-full px-3 h-full space-y-5 md:space-y-0 md:space-x-10 flex flex-col md:flex-row justify-center items-center">
+      <app-testimonial-card class="eachStaggerComponent  flex-1 h-full" *ngFor="let testimonial of testimonialDataList; trackBy:trackByFeedbackBy"
         [testimonialData]="testimonial"></app-testimonial-card>
     </div>
   </div>

@@ -1,11 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, ElementRef, HostListener, OnInit, ViewChild } from '@angular/core';
+import { staggerFade } from 'src/app/animations/animations';
 
 @Component({
   selector: 'app-recommendation-section',
   templateUrl: './recommendation-section.component.html',
-  styleUrls: ['./recommendation-section.component.scss']
+  styleUrls: ['./recommendation-section.component.scss'],
+  animations: [
+    staggerFade
+  ]
 })
 export class RecommendationSectionComponent implements OnInit {
+
+  inView : boolean = false;
+  @ViewChild('recommSec') recommSec: ElementRef;
 
   testimonialDataList: Array<object> = [
     {
@@ -29,4 +36,14 @@ export class RecommendationSectionComponent implements OnInit {
   trackByFeedbackBy(index: number, testimonial: any) {
     return testimonial.feedbackBy;
   }
+
+  @HostListener('window:scroll')
+  checkScroll() {
+    const scrollPosition = window.pageYOffset + window.innerHeight;
+    if (this.recommSec && this.recommSec.nativeElement.offsetTop <= scrollPosition) {
+      this.inView = true;
+    }
+  }
+
+  
 }

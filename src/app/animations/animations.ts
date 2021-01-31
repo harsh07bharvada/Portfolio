@@ -15,13 +15,20 @@ export let fade = trigger('fade', [
     ])
 ]);
 
+export let fadeInView = trigger('fadeInView', [
+    transition('close => open', [
+        style({ opacity: 0 ,transform: 'translateX(100px)'}),
+        animate('750ms 250ms cubic-bezier(0.35, 0, 0.25, 1)')
+    ])
+]);
+
 
 
 export let staggerFade = trigger('staggerFade', [
-    transition(':enter', [
+    transition('close => open', [
         query('.eachStaggerComponent', [
             style({ opacity: 0, transform: 'translateY(100px)' }),
-            stagger(130, [
+            stagger(150, [
                 animate('750ms cubic-bezier(0.35, 0, 0.25, 1)', style({ opacity: 1, transform: 'none' }))
             ])
         ])
