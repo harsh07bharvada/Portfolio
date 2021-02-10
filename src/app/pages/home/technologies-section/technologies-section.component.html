@@ -1,0 +1,23 @@
+<div  class="w-full h-full bg-gray-900 flex flex-col p-3 space-y-10 md:p-16">
+
+  <div class="w-full flex flex-col space-y-1 justify-center items-start">
+    <app-sub-heading subHeadingText="What I work with"></app-sub-heading>
+    <app-heading bgColor="DEFAULT_GRADIENT" headingText="Technologies & Skills"></app-heading>
+  </div>
+
+  <div #techUsed [@staggerFade]="inView ? 'open' : 'close'"
+    class="w-full h-full space-x-2 md:space-x-20 py-5 md:py-20 flex justify-center items-center">
+
+    
+      <app-icon class="text-gray-600 eachStaggerComponent" iconType="HTML5" iconSize="XXL"></app-icon>
+
+      <app-icon class="text-gray-600 eachStaggerComponent" iconType="TAILWINDCSS" iconSize="XXL"></app-icon>
+
+      <app-icon class="text-gray-600 eachStaggerComponent" iconType="ANGULAR" iconSize="XXL"></app-icon>
+
+      <app-icon class="text-gray-600 eachStaggerComponent" iconType="NODEJS" iconSize="XXL"></app-icon>
+
+      <app-icon class="text-gray-600 eachStaggerComponent" iconType="MONGODB" iconSize="XXL"></app-icon>
+
+  </div>
+</div>
